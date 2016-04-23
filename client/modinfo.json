@@ -1,18 +1,18 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
-  "build": "PTE",
+  "build": "94132",
   "category": [
     "titans",
     "units",
     "faction"
   ],
   "context": "client",
-  "date": "2016/04/17",
+  "date": "2016/04/22",
   "dependencies": [
     "com.pa.legion-expansion-server"
   ],
   "description": "Adds an entirely new faction for use in skirmish and multiplayer.",
-  "display_name": "Legion Expansion",
+  "display_name": "Legion Expansion Client",
   "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",
   "icon": "http://i.imgur.com/SsUYiL8.png",
   "identifier": "com.pa.legion-expansion-client",
@@ -22,6 +22,15 @@
     ],
     "settings": [
       "coui://ui/mods/com.pa.legion-expansion/settings.js"
+    ],
+    "icon_atlas": [
+      "coui://ui/mods/com.pa.legion-expansion/icon_atlas.js"
+    ],
+    "shared_build": [
+      "coui://ui/mods/com.pa.legion-expansion/shared_build.js"
+    ],
+    "live_game": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game.js"
     ],
     "live_game_players": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_players.js"
@@ -65,5 +74,6 @@
   },
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "0.9.0-beta"
+  "version": "0.9.0-beta",
+  "hidden": true
 }

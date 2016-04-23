@@ -53,6 +53,10 @@
     "fired2": {
       "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
       "effect_spec": "/pa/units/land/l_titan_bot/vent_smoke.pfx rocket004 /pa/units/land/l_titan_bot/vent_smoke.pfx rocket014"
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
+      "effect_scale": 0.2
     }
   },
   "fx_offsets": [
@@ -91,8 +95,8 @@
   "has_death_effects": true,
   "max_health": 80000,
   "mesh_bounds": [
-    37,
-    36,
+    25,
+    25,
     60
   ],
   "model": {
@@ -143,14 +147,14 @@
         }
       ]
     },
-    "turn_accel": 30,
+    "turn_accel": 40,
     "turn_in_place": true,
-    "turn_speed": 60,
+    "turn_speed": 50,
     "type": "amphibious-large"
   },
   "physics": {
-    "orient_interp_rate": 60.0,
-    "radius": 10
+    "orient_interp_rate": 50.0,
+    "radius": 7
   },
   "recon": {
     "observer": {
@@ -212,7 +216,6 @@
         "rocket014",
         "rocket014",
         "rocket014",
-        "rocket014",
         "rocket014"
       ],
       "projectiles_per_fire": 16,
@@ -221,12 +224,14 @@
     },
     {
       "aim_bone": "bone_rightFoot",
+      "fire_event": "fired3",
       "muzzle_bone": "bone_rightFoot",
       "record_index": -1,
       "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_stomp_tool_weapon.json"
     },
     {
       "aim_bone": "bone_leftFoot",
+      "fire_event": "fired3",
       "muzzle_bone": "bone_leftFoot",
       "record_index": -1,
       "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_stomp_tool_weapon.json"
